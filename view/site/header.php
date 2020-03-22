@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dự án 1 - Quản lí nhân sự</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
         </nav>
         <!--Logo lớn-->
         <div class="boxtitle">
-            <img src="banhrang1.webp" alt="Quản lí nhân sự">
+            <img src="assets/img/banhrang1.webp" alt="Quản lí nhân sự">
             <h1>Quản lí</h1>
             <h2>Nhân sự DKB</h2>
         </div>
