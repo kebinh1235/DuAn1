@@ -18,7 +18,7 @@
             </div>
             <ul>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Nhân sự</a></li>
+                <li><a href="index.php?controller=HR">Nhân sự</a></li>
                 <li><a href="#">Khoa</a></li>
                 <li><a href="#">Phòng Ban</a></li>
             </ul>
