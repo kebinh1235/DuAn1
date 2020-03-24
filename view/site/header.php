@@ -17,13 +17,13 @@
                 <h3>Nhân Sự</h3>
             </div>
             <ul>
-                <li><a href="#">Dashboard</a></li>
+                <li><a href="index.php?controller=home">Dashboard</a></li>
                 <li><a href="index.php?controller=HR">Nhân sự</a></li>
                 <li><a href="#">Khoa</a></li>
                 <li><a href="#">Phòng Ban</a></li>
             </ul>
             <div class="boxlogin">
-                <a href="#">Đăng nhập</a>
+                <a href="index.php?controller=login&act=logout">Đăng xuất</a>
             </div>
         </nav>
         <!--Logo lớn-->
