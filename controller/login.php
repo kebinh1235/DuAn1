@@ -8,26 +8,28 @@ switch($action){
         include "view/site/login_reg.php";
     break;
     case "login":
-        // if(isset($_GET['login'])){
-        //     $user = $_POST['user'];
-        //     $pass = md5($_POST['pass']);
-        //     if(login($email, $pass) == true){
-        //             $_SESSION['user'] = $user;
-        //             header("location: index.php");
-        //         }else{
-        //             echo '<script> alert("Đăng nhập không thành công !"); </script>';
-        //             include "view/site/login_reg.php";
-        //         }
-        // }else{
-        //     include "view/site/login_reg.php";     
-        // }
         $username=$_POST['username'];
-        $pass=$_POST['pass'];
-        if(login($username, $pass) == true)
-        {
-            $_SESSION['user'] = $username;
-        }
-        header("location:index.php?controller=home");
+        $password=$_POST['pass'];
+       $info = login($username, $password);
+       if ($password != $info['password']) {
+        echo "Mật khẩu không đúng. Vui lòng nhập lại. <a href='javascript: history.go(-1)'>Trở lại</a>";
+        exit;
+         }
+       $_SESSION['user'] = $username;
+       echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='index.php?controller=home'>Về trang chủ</a>";
+       die();
+    break;
+    case "reg":
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $gender = $_POST['gender'];
+        $phone = $_POST['phone'];
+        $dob = $_POST['dob'];
+        reg($username, $password, $name, $email, $gender, $dob, $phone);
+        echo '<a href="index.php">nhấn để quay về trang đăng nhập</a>';
+        //check if username exist
     break;
     case logout:
         unset($_SESSION['user']);

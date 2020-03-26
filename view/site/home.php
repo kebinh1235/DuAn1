@@ -1,26 +1,28 @@
-    <!--Phần nội dung chính-->
+<!--Phần nội dung chính-->
+    <div class="container">
     <main>
         <div class="col-4">
-            <!--Thông tin nhân viên-->
-            <div class="main__box-left">
-                <h4>Tổng người dùng</h4>
-                <div class="box-number-1">300</div>
-                <h4>Đang Online</h4>
-                <div class="box-number-1"> 0 </div>
-            </div>
             <!--Danh sách phòng ban-->
             <div class="main__box-left">
                 <!--Tiêu đề-->
                 <div class="main__box-title">
-                    <span>
-                        Bảng điều khiển
-                    </span>
+                    <span>Bảng Điều Khiển</span>
                 </div>
                 <ul>
-                    <li><a href="#">Quản lí nhân sự</a></li>
-                    <li><a href="#">Quản lí phòng ban</a></li>
+                    <li><i class="fas fa-user-circle"><a href="#">Quản Lý Nhân Sự</a></i></li>
+                    <li><i class="fas fa-building"><a href="#">Quản Lý Phòng Ban</a></i></li>
+                    <li><a href="index.php?controller=login&act=logout">đăng xuất</a></li>
+                    <li><?php echo $_SESSION['user']; ?></li>
                 </ul>
+            </div>            
+            <!--Thông tin nhân viên-->
+            <div class="main__box-left">
+                <h4>Tổng Nguời Dùng</h4>
+                <div class="box-number-1">300</div>
+                <h4>Đang Online</h4>
+                <div class="box-number-1"> 0 </div>
             </div>
+         
         </div>
         <div class="col-12">
             <!--Bảng thống kê tổng-->
@@ -30,19 +32,20 @@
                 </div>
                 <div class="main__box-tongquan">
                     <div class="box-3">
-                        <h1>300</h1><br>
-                        <h3>Nhân viên</h3>
+                        <i class="fas fa-users"><span>300</span></i>
+                        <h2>Nhân Viên</h2>
                     </div>
                     <div class="box-3">
-                        <h1>4</h1><br>
-                        <h3>Phòng Ban</h3>
+                        <i class="fas fa-building"><span>4</span></i>
+                        <h2>Phòng Ban</h2>
                     </div>
                     <div class="box-3">
-                        <h1>0</h1><br>
-                        <h3>Đang Online</h3>
+                        <i class="far fa-user"><span>300</span></i>
+                        <h2>Đang Online</h2>
                     </div>
                 </div>
             </div>
+            <div class="clear"></div>
             <!--Bảng danh sách nhân viên-->
             <div class="main__box-right">
                 <h2>Danh sách đăng nhập gần đây</h2>
@@ -62,14 +65,63 @@
                         <td>03/08/2020</td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td>2</td>
                         <td>Trần Anh Đức</td>
                         <td>PNS001</td>
                         <td>ducta03@gmail.com</td>
                         <td>03/08/2020</td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td>3</td>
+                        <td>Trần Anh Đức</td>
+                        <td>PNS001</td>
+                        <td>ducta03@gmail.com</td>
+                        <td>03/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Trần Anh Đức</td>
+                        <td>PNS001</td>
+                        <td>ducta03@gmail.com</td>
+                        <td>03/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Trần Anh Đức</td>
+                        <td>PNS001</td>
+                        <td>ducta03@gmail.com</td>
+                        <td>03/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Trần Anh Đức</td>
+                        <td>PNS001</td>
+                        <td>ducta03@gmail.com</td>
+                        <td>03/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Trần Anh Đức</td>
+                        <td>PNS001</td>
+                        <td>ducta03@gmail.com</td>
+                        <td>03/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Trần Anh Đức</td>
+                        <td>PNS001</td>
+                        <td>ducta03@gmail.com</td>
+                        <td>03/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Trần Anh Đức</td>
+                        <td>PNS001</td>
+                        <td>ducta03@gmail.com</td>
+                        <td>03/08/2020</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
                         <td>Trần Anh Đức</td>
                         <td>PNS001</td>
                         <td>ducta03@gmail.com</td>
@@ -79,3 +131,5 @@
             </div>
         </div>
     </main>
+    </div>
+    <div class="clear"></div>

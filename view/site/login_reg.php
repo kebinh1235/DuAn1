@@ -23,28 +23,28 @@
             <!--Form Đăng Nhập-->
             <form id="login" class="input-group" action="index.php?controller=login&act=login" method="post">
                 <!--Tài Khoản - Mật Khẩu-->
-                <input type="text" name="username" id="#" class="input-field" placeholder="Tài Khoản" required>
-                <input type="text" name="pass" id="#" class="input-field" placeholder="Mật Khẩu" required>
+                <input type="text" name="username" id="#" class="input-field" placeholder="Tài Khoản" >
+                <input type="password" name="pass" id="#" class="input-field" placeholder="Mật Khẩu" >
                 <input type="checkbox" name="#" id="#" class="check-box"><span>Nhớ Mật Khẩu</span>
                 <button type="submit" name="login" class="submit-btn">Đăng Nhập</button>
             </form>
-
+        
             <!--Form Đăng Ký-->
-            <form id="register" class="input-group">
+            <form id="register" class="input-group" method="post" action="index.php?controller=login&act=reg">
                 <!--Họ Tên-->
-                <input type="text" name="#" id="#" class="input-field" placeholder="Họ Tên" required>
+                <input type="text" name="name" id="" class="input-field" placeholder="Họ Tên" >
                 <!--Ngày Sinh-->
-                <input type="date" name="#" id="#" class="input-field" placeholder="Ngày Sinh" required>
+                <input type="date" name="dob" id="#" class="input-field" placeholder="Ngày Sinh" >
                 <!--Giới Tính-->
-                Nam <input type="radio" name="#" id="#" class="radio" placeholder="Nam" required>
-                Nữ <input type="radio" name="#" id="#" class="radio" placeholder="Nữ" required>
+                Nam <input type="radio" name="gender" value="Nam" id="#" class="radio" placeholder="Nam" checked >
+                Nữ <input type="radio" name="gender" value="Nữ" id="#" class="radio" placeholder="Nữ" >
                 <!--Điện Thoại-->
-                <input type="text" name="#" id="#" class="input-field" placeholder="Điện Thoại" required>
+                <input type="text" name="phone" id="#" class="input-field" placeholder="Điện Thoại" >
                 <!--Email-->
-                <input type="email" name="#" id="#" class="input-field" placeholder="Email" required>
+                <input type="email" name="email" id="#" class="input-field" placeholder="Email" >
                 <!--Tài Khoản - Mật Khẩu-->
-                <input type="text" name="#" id="#" class="input-field" placeholder="Tài Khoản" required>
-                <input type="text" name="#" id="#" class="input-field" placeholder="Mật Khẩu" required>
+                <input type="text" name="username" id="#" class="input-field" placeholder="Tài Khoản" >
+                <input type="password" name="password" id="#" class="input-field" placeholder="Mật Khẩu" >
                 <!--Checkbox-->
                 <input type="checkbox" name="#" id="#" class="check-box"><span>Đồng ý với điều khoản</span>
                 <button type="submit" class="submit-btn">Đăng Ký</button>

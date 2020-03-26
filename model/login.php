@@ -1,15 +1,25 @@
 <?php
     include_once "model/config.php";
-    function login($username, $pass)
+    function login($username, $password)
+    {
+        $DBH=connect();
+        $query="SELECT username, password FROM nhanvien WHERE username='$username'";
+        $STH = $DBH->query($query);
+        $row = $STH -> rowCount();
+        $result = $STH->fetch(PDO::FETCH_ASSOC);
+        return $result;
+        if($row == 0)
+        {
+            echo "Tên đăng nhập này không tồn tại. Vui lòng kiểm tra lại. <a href='javascript: history.go(-1)'>Trở lại</a>";
+            exit;
+        }
+        return $result;
+    }
+    function reg($username, $password, $name, $email, $gender, $dob, $phone)
     {
         $DBH = connect();
-        $query = "SELECT * FROM chucvu WHERE taikhoan='$username' AND matkhau='$pass'";
-        $STH = $DBH->query($query);
-        $row_affected = $STH -> rowCount();
-        if($row_affected == 0)
-        {
-            return false;
-        }
-        return true;
+        $query = "INSERT INTO nhanvien (username, password, hoten, email, gioitinh, ngaysinh, dienthoai) VALUES ('$username',' $password', '$name', '$email', '$gender', '$dob', '$phone')";
+        $STH = $DBH -> prepare($query);
+        $STH->execute();
     }
 ?>
