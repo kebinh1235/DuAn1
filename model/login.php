@@ -7,7 +7,6 @@
         $STH = $DBH->query($query);
         $row = $STH -> rowCount();
         $result = $STH->fetch(PDO::FETCH_ASSOC);
-        return $result;
         if($row == 0)
         {
             echo "Tên đăng nhập này không tồn tại. Vui lòng kiểm tra lại. <a href='javascript: history.go(-1)'>Trở lại</a>";

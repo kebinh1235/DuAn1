@@ -10,14 +10,15 @@ switch($action){
     case "login":
         $username=$_POST['username'];
         $password=$_POST['pass'];
-       $info = login($username, $password);
-       if ($password != $info['password']) {
+        $info = login($username, $password);
+        if ($password != $info['password'])
+        {
         echo "Mật khẩu không đúng. Vui lòng nhập lại. <a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
-         }
-       $_SESSION['user'] = $username;
-       echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='index.php?controller=home'>Về trang chủ</a>";
-       die();
+        }
+        $_SESSION['user'] = $username;
+        echo "Xin chào " . $username . ". Bạn đã đăng nhập thành công. <a href='index.php?controller=home'>Về trang chủ</a>";
+        die();
     break;
     case "reg":
         $username = $_POST['username'];
