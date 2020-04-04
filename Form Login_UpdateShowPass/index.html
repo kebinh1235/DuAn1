@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập và Đăng Ký</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <!--Button-->
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Đăng Nhập</button>
+                <button type="button" class="toggle-btn" onclick="register()">Đăng Ký</button>
+            </div>
+            <!--Hình Avatar-->
+            <div class="social-icons">
+                <img src="images/avatar.png" alt="Avatar Profile">
+            </div>
+            <!--Form Đăng Nhập-->
+            <form id="login" class="input-group">
+                <!--Tài Khoản - Mật Khẩu-->
+                <input type="text" name="#" id="#" class="input-field" placeholder="Tài Khoản" required>
+                <input type="password" name="#" class="input-field" id="pass_field_login" placeholder="Mật Khẩu" required>
+                <span class="show-hide">
+                    <i class="fa fa-eye" id="show_btn_login"></i>
+                </span>
+                <!--Điện Thoại-->
+                <input type="text" name="#" id="#" class="input-field" placeholder="Điện Thoại" required>
+                <input type="checkbox" name="#" id="#" class="check-box"><span>Nhớ Mật Khẩu</span>
+                <button type="submit" class="submit-btn">Đăng Nhập</button>
+            </form>
+
+            <!--Form Đăng Ký-->
+            <form id="register" class="input-group">
+                <!--Tài Khoản - Mật Khẩu-->
+                <input type="text" name="#" id="#" class="input-field" placeholder="Tài Khoản" required>
+                <input type="password" name="#" class="input-field" id="pass_field_register" placeholder="Mật Khẩu" required>
+                <span class="show-hide">
+                    <i class="fa fa-eye" id="show_btn_register"></i>
+                </span>                
+                <!--Họ Tên-->
+                <input type="text" name="#" id="#" class="input-field" placeholder="Họ Tên" required>
+                <!--Ngày Sinh-->
+                <input type="date" name="#" id="#" class="input-field" placeholder="Ngày Sinh" required>
+                <!--Giới Tính-->
+                Nam <input type="radio" name="#" id="#" class="radio" placeholder="Nam" required>
+                Nữ <input type="radio" name="#" id="#" class="radio" placeholder="Nữ" required>
+                <!--Điện Thoại-->
+                <input type="text" name="#" id="#" class="input-field" placeholder="Điện Thoại" required>
+                <!--Email-->
+                <input type="email" name="#" id="#" class="input-field" placeholder="Email" required>
+                <!--Checkbox-->
+                <input type="checkbox" name="#" id="#" class="check-box"><span>Tôi đồng ý với các điều khoản</span>
+                <button type="submit" class="submit-btn">Đăng Ký</button>
+            </form>
+        </div>
+        
+    <!--Javascript-->
+    <script src="js/javascript.js"></script>  
+
+    </div>
+</body>
+</html>
