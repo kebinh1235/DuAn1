@@ -46,7 +46,10 @@
                     <div class="main__box-all-profile-personal">
                         <div class="main__box-all-profile-personal-title">
                             <p style="float: left">PB01 - Phòng Kế Toán </p>
-                            <a href="index.php?controller=PDF&idPB=1" style="float: right; padding: 10px 10px 0 0; font-size: 25px; color: black;"><i class="fas fa-file-alt"></i></a>
+                            <?php
+                            if($_SESSION['id_phongban']==1)
+                            echo '<a href="index.php?controller=PDF&idPB=1" style="float: right; padding: 10px 10px 0 0; font-size: 25px; color: black;"><i class="fas fa-file-alt"></i></a>';
+                            ?>
                             <hr style="clear: both">
                         </div>
                         <!--Bảng thông tin nhân viên công ty-->
@@ -90,7 +93,10 @@
                     <div class="main__box-all-profile-personal">
                         <div class="main__box-all-profile-personal-title">
                             <p style="float: left">PB02 - Phòng Nhân Sự</p>
-                            <a href="index.php?controller=PDF&idPB=2" style="float: right; padding: 10px 10px 0 0; font-size: 25px; color: black;"><i class="fas fa-file-alt"></i></a>
+                            <?php
+                            if($_SESSION['id_phongban']==1)
+                            echo '<a href="index.php?controller=PDF&idPB=2" style="float: right; padding: 10px 10px 0 0; font-size: 25px; color: black;"><i class="fas fa-file-alt"></i></a>';
+                            ?>
                             <hr style="clear: both">
                         </div>
                         <!--Bảng thông tin nhân viên công ty-->
