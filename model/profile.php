@@ -18,4 +18,14 @@ function getluong($id)
     $result = $STH->fetch(PDO::FETCH_ASSOC);
     return $result;
 }
+function edit($name, $date, $phone, $email, $nguyenquan, $cmnd, $noicap, $quoctich, $dantoc, $id)
+    {
+        $DBH = connect();
+        $query = "UPDATE nhanvien 
+        SET hoten='$name',ngaysinh ='$date',dienthoai=$phone,email='$email',
+        nguyenquan='$nguyenquan',cmnd='$cmnd',noicap ='$noicap',quoctich='$quoctich',dantoc='$dantoc'
+        WHERE idNhanVien='$id'";
+        $STH = $DBH -> prepare($query);
+        $STH -> execute();
+    }
 ?>

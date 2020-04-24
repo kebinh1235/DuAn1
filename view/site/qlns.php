@@ -20,8 +20,7 @@
                 }
                 else
                 {
-                echo ' <li><i class="fas fa-user-circle"><a href="#">Quản Lý Nhân Sự</a></i></li>
-                <li><i class="fas fa-building"><a href="#">Quản Lý Phòng Ban</a></i></li>';
+                echo '<li><i class="fas fa-check" style="padding: 30px 10px 0 30px; font-size: 20px;"></i><a href="index.php?controller=kiemduyet">Kiểm duyệt</a></i></li>';
                 }
                 ?>
                 </ul>
@@ -46,8 +45,9 @@
                     <!--Start Phòng Ban Nhân Sự-->
                     <div class="main__box-all-profile-personal">
                         <div class="main__box-all-profile-personal-title">
-                            <p>PB01 - Phòng Kế Toán</p>
-                            <hr>
+                            <p style="float: left">PB01 - Phòng Kế Toán </p>
+                            <a href="index.php?controller=PDF&idPB=1" style="float: right; padding: 10px 10px 0 0; font-size: 25px; color: black;"><i class="fas fa-file-alt"></i></a>
+                            <hr style="clear: both">
                         </div>
                         <!--Bảng thông tin nhân viên công ty-->
                         <table>
@@ -89,8 +89,9 @@
                     <!--Start Phòng Ban Kế Toán-->
                     <div class="main__box-all-profile-personal">
                         <div class="main__box-all-profile-personal-title">
-                            <p>PB02 - Phòng Nhân Sự</p>
-                            <hr>
+                            <p style="float: left">PB02 - Phòng Nhân Sự</p>
+                            <a href="index.php?controller=PDF&idPB=2" style="float: right; padding: 10px 10px 0 0; font-size: 25px; color: black;"><i class="fas fa-file-alt"></i></a>
+                            <hr style="clear: both">
                         </div>
                         <!--Bảng thông tin nhân viên công ty-->
                         <table>

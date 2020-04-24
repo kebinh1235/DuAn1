@@ -24,7 +24,8 @@
     {
         $password = md5($password);
         $DBH = connect();
-        $query = "INSERT INTO nhanvien (username, password, hoten, email, gioitinh, ngaysinh, dienthoai) VALUES ('$username', '$password', '$name', '$email', '$gender', '$dob', '$phone')";
+        $query = "INSERT INTO nhanvien (username, password, hoten, email, gioitinh, ngaysinh, dienthoai) 
+        VALUES ('$username', '$password', '$name', '$email', '$gender', '$dob', '$phone')";
         $STH = $DBH -> prepare($query);
         $STH->execute();
     }

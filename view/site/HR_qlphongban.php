@@ -11,16 +11,15 @@
                     <span>Bảng Điều Khiển</span>
                 </div>
                 <ul>
-                    <li><i class="fas fa-user-circle"><a href="">Quản Lý Nhân Sự</a></i></li>
-                    <li><i class="fas fa-building"><a href="">Quản Lý Phòng Ban</a></i></li>
+                <li><i class="fas fa-check" style="padding: 30px 10px 0 30px; font-size: 20px;"></i><a href="index.php?controller=kiemduyet">Kiểm duyệt</a></i></li>
                 </ul>
             </div>            
             <!--Thông tin nhân viên-->
             <div class="main__box-left">
                 <h4>Tổng Nguời Dùng</h4>
-                <div class="box-number-1"><?php echo $amountPB; ?></div>
+                <div class="box-number-1"><?php echo $amountMB; ?></div>
                 <h4>Đang Online</h4>
-                <div class="box-number-1"> 0 </div>
+                <div class="box-number-1">0</div>
             </div>
          
         </div>

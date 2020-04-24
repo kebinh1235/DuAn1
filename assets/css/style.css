@@ -453,6 +453,7 @@ footer .footer_box-info {
 }
 .main__box-all-profile-personal-title p {
   width: 200px;
+  border: 1px solid black;
   text-align: center;
   font-size: 16px;
   color: white;

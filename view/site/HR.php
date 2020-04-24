@@ -12,8 +12,7 @@
                     <span>Bảng Điều Khiển</span>
                 </div>
                 <ul>
-                    <li><i class="fas fa-user-circle"><a href="HR_qlnhansu.html">Quản Lý Nhân Sự</a></i></li>
-                    <li><i class="fas fa-building"><a href="HR_qlphongban.html">Quản Lý Phòng Ban</a></i></li>
+                <li><i class="fas fa-check" style="padding: 30px 10px 0 30px; font-size: 20px;"></i><a href="index.php?controller=kiemduyet">Kiểm duyệt</a></i></li>
                 </ul>
             </div>            
             <!--Thông tin nhân viên-->
@@ -34,7 +33,7 @@
                     <!--Start Phòng Ban Nhân Sự-->
                     <div class="main__box-all-profile-personal">
                         <div class="main__box-all-profile-personal-title">
-                            <p>PB01 - Phòng Nhân Sự</p>
+                            <p>PB02 - Phòng Nhân Sự</p>
                             <hr>
                         </div>
                         <!--Bảng thông tin nhân viên công ty-->
@@ -52,145 +51,24 @@
                             <th>Chi Tiết</th>
                             </tr>
                         <!--Thông Tin Nhân Viên 1-->
-                            <tr>
-                            <td>1</td>
-                            <td>KT015</td>
-                            <td>Trương Giáo Sư</td>
-                            <td>Phòng Kế Toán</td>
-                            <td>Truởng Phòng Kế Toán</td>
-                            <td>10/05/2019</td>
-                            <td>giaosu123@gmail.com</td>
-                            <td>0932156489</td>
-                            <td>
-                                <a href="profile.html">Thông Tin</a>
-                            </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 2-->
-                            <tr>
-                                <td>2</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 3-->
-                            <tr>
-                                <td>3</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 4-->
-                            <tr>
-                                <td>4</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 5-->
-                            <tr>
-                                <td>5</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 6-->
-                            <tr>
-                                <td>6</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 7-->
-                            <tr>
-                                <td>7</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 8-->
-                            <tr>
-                                <td>8</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 9-->
-                            <tr>
-                                <td>9</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>
-                            <!--Thông Tin Nhân Viên 10-->
-                            <tr>
-                                <td>10</td>
-                                <td>KT015</td>
-                                <td>Trương Giáo Sư</td>
-                                <td>Phòng Kế Toán</td>
-                                <td>Nhân Viên Kế Toán</td>
-                                <td>10/05/2019</td>
-                                <td>giaosu123@gmail.com</td>
-                                <td>0932156489</td>
-                                <td>
-                                    <a href="profile.html">Thông Tin</a>
-                                </td>
-                            </tr>                                                   
+                        <?php
+                        foreach($listHR as $list)
+                        {
+                            echo '<tr>
+                                    <td>'.$list['idNhanVien'].'</td>
+                                    <td>KT0'.$list['idNhanVien'].'</td>
+                                    <td>'.$list['hoten'].'</td>
+                                    <td>Phòng Kế Toán</td>
+                                    <td>'.$list['tenchucvu'].'</td>
+                                    <td>'.$list['ngaynhanviec'].'</td>
+                                    <td>'.$list['email'].'</td>
+                                    <td>'.$list['dienthoai'].'</td>
+                                    <td>
+                                        <a href="index.php?controller=profile&id='.$list['idNhanVien'].'">Thông Tin</a>
+                                    </td>
+                                    </tr>';
+                        }
+                        ?>      
                         </table>
                     </div>
                     <!--End Phòng Nhân Sự-->

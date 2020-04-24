@@ -1,4 +1,4 @@
- <div class="clear"></div>
+<div class="clear"></div>
     <!--Phần nội dung chính-->
     <div class="container">
     <main>
@@ -43,13 +43,13 @@
                 </div>
                 <div class="main__box-all-profile">
                     <div class="main__box-all-profile-img">
-                        <img src="assets/images/profile/nhanvien.jpg" alt="Hình Ảnh Nhân Viên">
+                        <img src="assets/<?=$info['image']?>" alt="Hình Ảnh Nhân Viên">
                         <span>Hình Ảnh</span>
                     </div>
 
                     <div class="main__box-all-profile-info">
                         <h2>Thông Tin Cơ Bản</h2>
-                            <form action="#" class="info-group">
+                            <form action="index.php?controller=profile&act=edit&id=<?=$info['idNhanVien']?>" class="info-group" method="post">
                                 <div class="label-group">
                                     <label>Mã Nhân Viên:</label>
                                     <br>
@@ -79,10 +79,10 @@
                                     <input type="text" name="" id="" value="<?php if($info['idPhongBan']==1){echo 'KT'.$info['idNhanVien'];}
                                     else{echo 'NS'.$info['idNhanVien'];}?>">
                                     <!--Tên Nhân Viên-->
-                                    <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                    <input type="text" name="name" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                     || ($_SESSION['id_phongban']==2)){echo $info['hoten'];} ?>">
                                     <!--Email-->
-                                    <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                    <input type="text" name="email" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                     || ($_SESSION['id_phongban']==2)){echo $info['email'];} ?>">                                    
                                     <!--Phòng Ban-->
                                     <input type="text" name="" id="" value="<?php if($info['idPhongBan']==1){echo "Phòng kế toán";}else
@@ -95,19 +95,17 @@
                                     || ($_SESSION['id_phongban']==2)){echo $info['ngaynhanviec'];} ?>">
                                     <!--Lương-->
                                     <input type="text" name="" id="" value="<?php if($_SESSION['iduser']==$mng['id_nhanvien'] || $_SESSION['id_phongban']==1)
-                                    echo $luong['luongcoban'];?>">                                    
+                                    echo number_format($luong['luongcoban']);?>">                                    
                                     <!--Giới Tính-->
                                     <div class="gender" style="padding-top: 15px;">
                                     <?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) || ($_SESSION['id_phongban']==2))
                                     {echo $info['gioitinh'];} ?>
                                     </div>
                                 </div>
-                            </form>
                     </div>
                     <div class="clear"></div>
                     <div class="main__box-profile-bottom">
                         <h2>Thông Tin Cá Nhân</h2>
-                        <form action="#" class="info-group">
                             <div class="label-group">
                                 <label>Ngày Sinh</label>
                                 <br>
@@ -131,38 +129,40 @@
                             </div>
                             <div class="input-group">
                                 <!--Ngày Sinh Nhân Viên-->
-                                <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                <input type="text" name="date" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                 || ($_SESSION['id_phongban']==2)){echo $info['ngaysinh'];} ?>">
                                 <!--Nguyên Quán-->
-                                <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                <input type="text" name="nguyenquan" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                 || ($_SESSION['id_phongban']==2)){echo $info['nguyenquan'];} ?>">
                                 <!--Số CMND-->
-                                <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                <input type="text" name="cmnd" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                 || ($_SESSION['id_phongban']==2)){echo $info['cmnd'];} ?>">
                                 <!--Nơi Cấp-->
-                                <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                <input type="text" name="noicap" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                 || ($_SESSION['id_phongban']==2)){echo $info['noicap'];} ?>">
                                 <!--Dân Tộc-->
-                                <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                <input type="text" name="dantoc" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                 || ($_SESSION['id_phongban']==2)){echo $info['dantoc'];} ?>">
                                 <!--Quốc Tịch-->
-                                <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                <input type="text" name="quoctich" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                 || ($_SESSION['id_phongban']==2)){echo $info['quoctich'];} ?>" >
                                 <!--Đnện Thoại-->
-                                <input type="text" name="" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
+                                <input type="text" name="phone" id="" value="<?php if(($_SESSION['id_phongban'])==($info['idPhongBan']) 
                                 || ($_SESSION['id_phongban']==2)){echo $info['dienthoai'];} ?>" >                                                                 
                             </div>
-                        </form>
+                        
                     </div>
                     <!--Quay Về Trang Chủ-->
                     <div class="backhome">
-                    <?php if(($_SESSION['iduser']==$mng['id_nhanvien'] && $_SESSION['id_phongban'] == 2) || ($_SESSION['id_phongban']==2
-                    && $_SESSION['id_phongban'] != $info['idPhongBan']))
+                    <?php if(($_SESSION['iduser']==$mng['id_nhanvien']) && $_SESSION['id_phongban'] == 2)
                     {
-                        echo '<a href="index.php?controller=edit">Chỉnh Sửa</a>';
+                        
+                        echo '<input type="submit" name="editprofile" value="Chỉnh sửa">';
                     }
                     ?> 
+                    </form>
                         <a href='javascript: history.go(-1)'>Trở lại</<a>
+                        
                     </div>
 
                 </div>

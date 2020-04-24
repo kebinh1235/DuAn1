@@ -1,4 +1,8 @@
 <?php
+if(isset($_SESSION['user']))
+{
+    header("location: index.php?controller=home");
+}
 include_once "model/login.php";
 include_once "model/accountant.php";
 $action = "default";
